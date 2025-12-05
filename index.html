@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HZComics - 1:1 Conversion (Vanilla)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">HZComics</div>
+    <nav class="nav-actions">
+      <button id="btn-home" class="nav-btn active">Home</button>
+      <button id="btn-explore" class="nav-btn">Explore</button>
+      <button id="btn-bookmark" class="nav-btn">Bookmark</button>
+      <button id="btn-profile" class="nav-btn">Profile</button>
+      <button id="btn-admin" class="nav-btn">Admin</button>
+      <button id="toggle-dark" class="nav-btn">🌙</button>
+    </nav>
+  </header>
+
+  <main id="app" class="container">
+    <!-- Pages injected by JS -->
+  </main>
+
+  <!-- Interstitial Ad Modal -->
+  <div id="interstitial" class="modal hidden">
+    <div class="modal-inner">
+      <div class="ad-box">
+        <h2>🎯 Sponsored</h2>
+        <p>Iklan demo (interstitial)</p>
+      </div>
+      <button id="close-ad" class="btn">Tutup (5)</button>
+    </div>
+  </div>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" class="modal hidden">
+    <div class="modal-inner" id="auth-inner">
+      <!-- rendered by JS -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
